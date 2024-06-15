@@ -99,7 +99,7 @@ export default function Home() {
                 Happy Fathers Day!!!
             </div>
             <div className="relative w-full max-w-4xl mx-auto">
-                <div className=" absolute w-[100%] mt-[20%]">
+                <div className=" absolute w-[85%] mt-[22%] left-0 right-0 m-auto">
                     <Slideshow images={images}/>
                 </div>
                 <Image

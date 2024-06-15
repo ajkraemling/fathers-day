@@ -19,7 +19,7 @@ const Slideshow = ({images, interval = 3000}) => {
             alt="Slideshow Image"
             width={1000}
             height={1000}
-            className="rounded-[20%]  border-8 border-orange-400 border-dotted object-cover"
+            className="rounded-[20%] border-8 border-orange-400 border-dotted object-cover"
         />
     );
 };
