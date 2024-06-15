@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from "next/image";
 
+// @ts-ignore
 const Slideshow = ({ images, interval = 3000 }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
