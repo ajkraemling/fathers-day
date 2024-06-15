@@ -51,7 +51,8 @@ import father30 from '@/components/images/IMG_6583.jpg';
 import father31 from '@/components/images/IMG_6616.jpg';
 import father32 from '@/components/images/IMG_7621.jpg';
 import type {StaticImageData} from 'next/image';
-const images:StaticImageData[]  = [
+
+const images: StaticImageData[] = [
     father1,
     father2,
     father3,
@@ -93,20 +94,26 @@ import React from "react";
 
 export default function Home() {
     return (
-        <div>
-            <Slideshow images={images}/>
-            <Image
-                src={FrameImg}
-                alt="handsome face"
-                width={1000}
-                height={800}
-                className=" w-[60%] object-cover absolute top-0 bottom-0 left-0 right-0 m-auto rotate-90 "
-            />
-            <style jsx>{`
-                div {
-                    text-align: center;
-                }
-            `}</style>
+        <div className="flex flex-col items-center justify-center min-h-screen ">
+            <div className="text-4xl md:text-5xl lg:text-7xl font-bold text-center mt-8">
+                Happy Fathers Day!!!
+            </div>
+            <div className="relative w-full max-w-4xl mx-auto">
+                <div className=" absolute w-[100%] mt-[20%]">
+                    <Slideshow images={images}/>
+                </div>
+                <Image
+                    src={FrameImg}
+                    alt="handsome face"
+                    layout="responsive"
+                    width={1000}
+                    height={800}
+                    className="rotate-90"
+                />
+            </div>
+            <div className="text-2xl md:text-3xl lg:text-5xl font-bold text-center mb-8">
+                Best dad ever! Love you to the moon and back
+            </div>
         </div>
     );
 }
