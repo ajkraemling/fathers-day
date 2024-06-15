@@ -2,30 +2,47 @@
 import Image from "next/image";
 import FrameImg from '@/components/images/3114x3406.png';
 import Slideshow from '../components/Slideshow';
+// @ts-ignore
 import father1 from '@/components/images/ae8a889c-47b0-4040-b5b6-393bdecb23e5.JPG';
+// @ts-ignore
 import father2 from '@/components/images/d3978894-064f-44ad-b656-9401a35221dd.JPG';
 import father3 from '@/components/images/IMG_0005.jpg';
 import father4 from '@/components/images/IMG_0027.jpg';
+// @ts-ignore
 import father5 from '@/components/images/IMG_0184.JPG';
+// @ts-ignore
 import father6 from '@/components/images/IMG_0187.JPG';
+// @ts-ignore
 import father7 from '@/components/images/IMG_0191.JPG';
+// @ts-ignore
 import father8 from '@/components/images/IMG_0201.JPG';
+// @ts-ignore
 import father9 from '@/components/images/IMG_0226.JPG';
+// @ts-ignore
 import father10 from '@/components/images/IMG_0377.JPG';
+// @ts-ignore
 import father11 from '@/components/images/IMG_0393.JPG';
+// @ts-ignore
 import father12 from '@/components/images/IMG_0782.JPG';
+// @ts-ignore
 import father13 from '@/components/images/IMG_0846.JPG';
 import father14 from '@/components/images/IMG_0853.jpg';
 import father15 from '@/components/images/IMG_1075.jpg';
+// @ts-ignore
 import father16 from '@/components/images/IMG_1121.JPG';
 import father17 from '@/components/images/IMG_1219.jpg';
 import father19 from '@/components/images/IMG_2481.jpg';
+// @ts-ignore
 import father20 from '@/components/images/IMG_2626.JPG';
 import father21 from '@/components/images/IMG_2796.jpg';
+// @ts-ignore
 import father22 from '@/components/images/IMG_2798.JPG';
+// @ts-ignore
 import father23 from '@/components/images/IMG_2814.JPG';
+// @ts-ignore
 import father24 from '@/components/images/IMG_2830.JPG';
 import father25 from '@/components/images/IMG_2835.jpg';
+// @ts-ignore
 import father26 from '@/components/images/IMG_3066.JPG';
 import father27 from '@/components/images/IMG_5192.jpg';
 import father28 from '@/components/images/IMG_6031.jpg';
