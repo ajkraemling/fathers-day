@@ -15,7 +15,7 @@ import father10 from '@/components/images/IMG_0377.JPG';
 import father11 from '@/components/images/IMG_0393.JPG';
 import father12 from '@/components/images/IMG_0782.JPG';
 import father13 from '@/components/images/IMG_0846.JPG';
-import father14 from '@/components/images/IMG_0853.JPG';
+import father14 from '@/components/images/IMG_0853.jpg';
 import father15 from '@/components/images/IMG_1075.jpg';
 import father16 from '@/components/images/IMG_1121.JPG';
 import father17 from '@/components/images/IMG_1219.jpg';
