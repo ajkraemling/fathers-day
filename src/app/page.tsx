@@ -99,6 +99,7 @@ export default function Home() {
         const audio = audioRef.current;
         if (audio) {
             const playAudio = () => {
+                // @ts-ignore
                 audio.play().catch((error: any) => {
                     console.log('Audio playback failed:', error);
                 });
