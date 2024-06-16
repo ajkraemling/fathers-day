@@ -90,13 +90,43 @@ const images: StaticImageData[] = [
     // "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
 ];
 
-import React from "react";
+import React, {useEffect, useRef} from "react";
 
 export default function Home() {
+    const audioRef = useRef(null);
+
+    useEffect(() => {
+        const audio = audioRef.current;
+        if (audio) {
+            const playAudio = () => {
+                audio.play().catch((error: any) => {
+                    console.log('Audio playback failed:', error);
+                });
+            };
+
+            // Try to play the audio on mount
+            playAudio();
+
+            // Add a click event listener to play audio when user interacts with the page
+            document.addEventListener('click', playAudio, { once: true });
+
+            // Clean up the event listener on component unmount
+            return () => {
+                document.removeEventListener('click', playAudio);
+            };
+        }
+    }, []);
+
     return (
         <div className="flex flex-col items-center justify-center min-h-screen ">
+            <audio ref={audioRef} autoPlay={true}>
+                <source src="/nina.mp3" type="audio/mpeg"/>
+                Your browser does not support the audio element.
+            </audio>
             <div className="text-4xl md:text-5xl lg:text-7xl font-bold text-center mt-8">
                 Happy Fathers Day!!!
+            </div><div className="text-lg font-bold text-center ">
+                (Click for a special song)
             </div>
             <div className="relative w-full max-w-4xl mx-auto">
                 <div className=" absolute w-[85%] mt-[22%] left-0 right-0 m-auto">
